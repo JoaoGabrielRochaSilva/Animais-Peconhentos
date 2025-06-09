@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais Peçonhentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <span class="material-symbols-outlined">
+                <p>home</p>
+            </span>
+        </a>
+
+        <h1>Animais Peçonhentos <br> Formulário</h1>
+
+    </header>
+    <main>
+        <form action="#" method="get">
+            <h2>Adicionar Animal</h2>
+            
+            <fieldset class="grupo-nome">
+                    <label for="nome_animal">Nome Animal</label>
+                    <input type="text" name="nome_animal" id="nome_animal" required>
+                        
+                    <label for="especie">Espécie</label>
+                    <input type="text" name="especie" id="especie" required>
+
+            </fieldset>
+            
+            <p>Características</p>
+            <textarea name="caracteristicas" id="caracteristicas" placeholder="Dieta, habitat, etc..."></textarea>
+
+            <fieldset class="categoria">
+                <legend>Categoria</legend>
+
+                <label for="nao_letal"><input type="radio" name="categoria" id="nao_letal">Não letal</label>
+
+                <label for="letal"><input type="radio" name="categoria" id="letal">Letal</label>
+
+                <label for="extremamente_letal"><input type="radio" name="categoria" id="extremamente_letal">Extremamente letal</label>
+            </fieldset>
+            <input type="submit" value="Enviar Animal">
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+main {
+    margin: auto;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border: 5px solid rgb(101, 184, 101);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.376);
+}
+
+form > h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 0px 20px 0px;
+}
+
+form > fieldset {
+    border: none;
+}
+
+form > fieldset > input {
+    height: 25px;
+    padding-left: 10px;
+}
+
+form > textarea {
+    height: 60px;
+    width: 184px;
+    padding-left: 10px;
+}
+
+form > p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+form > fieldset > input, textarea {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 3px solid rgb(110, 255, 110);
+    border-radius: 10px;
+    outline: none;
+}
+
+.grupo-nome > label {
+    margin-bottom: 0px;
+}
+
+form > .categoria {
+    border: 3px solid rgb(110, 255, 110);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form > fieldset > legend {
+    font-size: 1.2em;
+    text-align: center;
+    border-left: 3px solid rgb(110, 255, 110);;
+    border-right: 3px solid rgb(110, 255, 110);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+form > fieldset > label {
+    display: block;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form > fieldset > label > input {
+    margin-right: 10px;
+}
+
+form > input {
+    display: block;
+    width: 124px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(101, 184, 101);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.271);
+
+    transition: 0.5s;  
+}
+
+form > input:hover {
+    cursor: pointer;
+    background-color: rgb(77, 154, 77);
+    width: 140px;
+}
