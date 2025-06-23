@@ -96,6 +96,8 @@ div.Imagem {
 
 div.Imagem>img {
     width: 100%;
+    min-width: 300px;
+    max-width: 500px;
     height: 100%;
     margin-bottom: -5px;
 }
@@ -171,4 +173,27 @@ div.video > iframe {
     width: 100%;
     max-width: 560px;
     min-width: 200px;
+}
+
+@media screen and (max-width: 760px) {
+    main {
+        width: 85vw;
+        flex-flow: column wrap;
+        margin: auto;
+    }
+
+    div.Imagem {
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        margin: auto;
+        align-self: center;
+    }
+
+    div.conteudo {
+        padding: 0px;
+        margin: auto;
+        align-self: self-start;
+        width: 100%;
+    }
 }
