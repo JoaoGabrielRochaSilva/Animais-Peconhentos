@@ -7,30 +7,38 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens-animais-peconhentos/serpente-bck.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 header {
-    background-color: rgb(101, 184, 101);
+    background-image: radial-gradient( rgb(111, 204, 111), rgb(85, 158, 85));
     width: 100%;
     padding-top: 10px;
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.545);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.545);
 
 }
 
 .material-symbols-outlined>p {
     color: white;
     margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: -15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 2em;
+    transition: 0.3s;
+}
+
+.material-symbols-outlined>p:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 
 
 header>h1 {
-    width: 50%;
-    margin: auto;
     text-align: center;
     font-size: 2.5em;
     color: rgba(42, 42, 42, 0.76);
@@ -49,7 +57,7 @@ header>nav {
     align-items: center;
 }
 
-nav>a {
+nav>input {
     text-decoration: none;
     text-align: center;
 
@@ -62,36 +70,47 @@ nav>a {
 
     background-color: rgb(93, 183, 93);
     border-radius: 10px;
+    border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.266);
     transition-duration: 0.5s;
 }
 
-nav>a:hover {
-    background-color: rgba(129, 254, 129, 0.372);
+nav>input:hover, nav>input:focus {
+    cursor: pointer;
+    background-color: rgb(83, 165, 83);
+    transform: scale(1.05);
 }
 
 main {
     display: flex;
-    width: 60%;
+    width: 80vw;
     margin: auto;
     margin-top: 30px;
-    padding: 30px;
-    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding: 50px;
+
+    justify-content: center;
     align-items: center;
-    flex-flow: row, nowrap;
+    flex-flow: column wrap;
+
+    background-color: rgba(0, 0, 0, 0.422);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.36);
 }
 
 div.Imagem {
-    width: 100vw;
+    width: 40%;
     padding: 0px 0px 0px;
     margin: 15px 50px 0px 0px;
 
-    border: 8px rgb(73, 157, 90) solid;
-    border-radius: 10px;
+    border-radius: 8px;
 
-    align-self: self-start;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.411);
+    transition: 0.3s;
+}
 
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.387);
+div.Imagem:hover {
+    transform: scale(1.05);
 }
 
 div.Imagem>img {
@@ -100,17 +119,56 @@ div.Imagem>img {
     max-width: 500px;
     height: 100%;
     margin-bottom: -5px;
+    border-radius: 8px;
+    border: 5px solid green;
 }
 
-main>div.conteudo>h2 {
+div.Animais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: aparecer;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+div.Animais:not(div#inicio) {
+    display: none;
+}
+
+div.conteudo {
+    width: 60%;
+    padding: 20px 20px 20px 10px;
+}
+
+div.conteudo>h2 {
     padding: 10px;
+    margin-bottom: 10px;
+
+    background-image: linear-gradient(to right, rgb(101, 184, 101), transparent);
+    width: 50%;
+    border-radius: 8px;
 }
 
-main>div.conteudo>ul {
+div.conteudo>ul {
     list-style: none;
 }
 
 p {
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
     text-align: justify;
     line-height: 25px;
@@ -149,35 +207,9 @@ button:hover {
     background-color: rgb(84, 166, 84);
 }
 
-div.video {
-    text-align: center;
-    padding: 50px;
-
-    background-color: rgb(101, 184, 101);
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.605);
-}
-
-div.video > h2 {
-    text-align: center;
-    padding: 20px;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.62);
-}
-
-div.video > iframe {
-    border: 5px solid white;
-    border-radius: 10px;
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.571);
-    width: 100%;
-    max-width: 560px;
-    min-width: 200px;
-}
-
 @media screen and (max-width: 760px) {
     main {
-        width: 85vw;
+        width: 70%;
         flex-flow: column wrap;
         margin: auto;
     }
@@ -187,13 +219,19 @@ div.video > iframe {
         min-width: 300px;
         max-width: 500px;
         margin: auto;
-        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    div.Animais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
     }
 
     div.conteudo {
         padding: 0px;
         margin: auto;
-        align-self: self-start;
         width: 100%;
     }
 }
