@@ -136,6 +136,13 @@ div.Animais {
     animation-timing-function: ease-in-out;
 }
 
+div.informacao > ul {
+    animation-name: aparecerInfo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes aparecer {
     from {
         transform: translateX(100px);
@@ -143,6 +150,17 @@ div.Animais {
     }
     to {
         transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes aparecerInfo {
+    from {
+        transform: translateY(20px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0px);
         opacity: 100%;
     }
 }
@@ -165,7 +183,7 @@ div.conteudo>h2 {
     border-radius: 8px;
 }
 
-div.conteudo>ul {
+div.conteudo>div.informacao>ul, div.conteudo>ul {
     list-style: none;
 }
 
