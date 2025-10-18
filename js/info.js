@@ -2,7 +2,7 @@ const Animais = [
     {
         Nome: "Tarantula",
 
-        Categoria: "Não Letais",
+        Categoria: "Não-Letais",
 
         Resumo: `
         <ul>

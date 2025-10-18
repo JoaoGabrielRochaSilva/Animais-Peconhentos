@@ -4,10 +4,23 @@ let divInfo = document.querySelectorAll(".informacao");
 function aparecer(botao) {  
 
     for (let i=0; i < divs.length; i++) {
-        if (divs[i].id == botao.value) {
+        if (divs[i].id == botao.value.replace(" ", "-")) {
+
             divs[i].style.display = "flex";
-        }
-            
+
+            let cat = document.getElementsByClassName(divs[i].id);
+            let animalInfo = Animais.filter(function (animalBusca) {
+                    return animalBusca.Categoria == divs[i].id;
+                });
+
+            for(let i=0; i < cat.length; i++) {
+                
+                for(let i=0; i < animalInfo.length; i++) {
+                    if(animalInfo[i].Nome == cat[i].id)
+                        cat[i].innerHTML = animalInfo[i].Resumo;
+                }
+            }
+        }   
         else
             divs[i].style.display = "none";
     }
