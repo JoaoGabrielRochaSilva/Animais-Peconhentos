@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-image: radial-gradient( rgb(111, 204, 111), rgb(85, 158, 85));
+    background: linear-gradient(180deg, #1B4332 0%, #2D6A4F 100%);
     width: 100%;
     padding-top: 10px;
 
@@ -23,7 +23,7 @@ header {
 }
 
 .material-symbols-outlined>p {
-    color: white;
+    color: #95D5B2;
     margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -40,21 +40,23 @@ header {
 
 header>h1 {
     text-align: center;
-    font-size: 2.5em;
-    color: rgba(42, 42, 42, 0.76);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.657);
-    font-family: "Domine", serif;
+    font-size: 2em;
+    color: #D8F3DC;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-family: "Cinzel Decorative", serif;
     padding: 20px;
 }
 
 header>nav {
-    background-color: rgb(85, 158, 85);
+    background-color: #255b44;
     padding: 10px;
 
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.335);
 }
 
 nav>input {
@@ -68,7 +70,7 @@ nav>input {
     flex-basis: 20%;
     padding: 15px;
 
-    background-color: rgb(93, 183, 93);
+    background-color: #40916C;
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.266);
@@ -77,7 +79,7 @@ nav>input {
 
 nav>input:hover, nav>input:focus {
     cursor: pointer;
-    background-color: rgb(83, 165, 83);
+    background-color: #2D6A4F;
     transform: scale(1.05);
 }
 
@@ -120,7 +122,7 @@ div.Imagem>img {
     height: 100%;
     margin-bottom: -5px;
     border-radius: 8px;
-    border: 5px solid green;
+    border: 5px solid rgba(0, 133, 0, 0.5);
 }
 
 div.Animais {
@@ -186,7 +188,7 @@ p>span::before {
 }
 
 button {
-    background-color: rgb(93, 183, 93);
+    background-color: rgb(76, 151, 76);
     color: white;
     font-weight: bold;
     font-size: 1.1em;
@@ -199,12 +201,13 @@ button {
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.365);
 
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(84, 166, 84);
+    background-color: rgb(52, 104, 52);
+    transform: scale(1.05)
 }
 
 @media screen and (max-width: 760px) {
