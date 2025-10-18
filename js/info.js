@@ -29,6 +29,7 @@ const Animais = [
         </ul>
         `,
     },
+
     {
         Nome: "Escorpiao-Amarelo",
 
@@ -36,27 +37,59 @@ const Animais = [
 
         Resumo: `
         <ul>
-        <li><p><span></span>Nome científico: Tityus serrulatus</p></li>
-        <li><p><span></span>Distribuição: Comum em áreas urbanas e rurais do Brasil, principalmente no Sudeste.</p></li>
-        <li><p><span></span>Habitat: Entulhos, fendas de muros, pilhas de madeira e locais escuros dentro de residências.</p></li>
-        <li><p><span></span>Comportamento: Noturno; abriga-se durante o dia e pica quando pressionado ou manipulado.</p></li>
-        <li><p><span></span>Veneno: Neurotóxico potente; pode causar dor intensa, náuseas e, em casos graves, parada cardiorrespiratória.</p></li>
-        <li><p><span></span>Curiosidade: Reproduz-se por partenogênese (fêmeas sem necessidade de macho).</p></li>
+        <li><p><span></span><strong>Nome científico:</strong> Tityus serrulatus</p></li>
+        <li><p><span></span><strong>Distribuição:</strong> Comum em áreas urbanas e rurais do Brasil, principalmente no Sudeste.</p></li>
+        <li><p><span></span><strong>Habitat:</strong> Entulhos, fendas de muros, pilhas de madeira e locais escuros dentro de residências.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Noturno; abriga-se durante o dia e pica quando pressionado ou manipulado.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Neurotóxico potente; pode causar dor intensa, náuseas e, em casos graves, parada cardiorrespiratória.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Reproduz-se por partenogênese (fêmeas sem necessidade de macho).</p></li>
         </ul>
         `,
 
         Detalhado: `
         <ul>
-        <li><p><span></span>Nome científico: Tityus serrulatus</p></li>
-        <li><p><span></span>Distribuição geográfica: Amplamente encontrado no Brasil — com maior incidência nas regiões Sudeste, Centro-Oeste e Nordeste; adapta-se bem a áreas urbanas.</p></li>
-        <li><p><span></span>Habitat natural: Prefere locais escuros e úmidos, como entulhos, frestas de muros, pilhas de madeira, pedras e dentro de residências (sob móveis, em calçados, caixas etc.).</p></li>
-        <li><p><span></span>Comportamento: Noturno e solitário. Evita contato, mas pica se for pressionado, manipulado ou surpreendido.</p></li>
-        <li><p><span></span>Veneno: Predominantemente neurotóxico; provoca dor local intensa, sudorese, vômito, taquicardia, hipertensão e, em casos severos, convulsões e insuficiência cardiorrespiratória.</p></li>
-        <li><p><span></span>Periculosidade: Alto risco — picadas podem ser fatais sem atendimento médico rápido. Crianças, idosos e portadores de comorbidades correm maior risco.</p></li>
-        <li><p><span></span>Reprodução: Partenogênese (fêmeas podem gerar descendentes sem acasalamento), o que facilita a rápida expansão populacional em ambientes urbanos.</p></li>
-        <li><p><span></span>Importância ecológica: Controla populações de insetos, especialmente baratas, atuando como predador natural em ecossistemas urbanos e rurais.</p></li>
-        <li><p><span></span>Medidas de prevenção: Manter ambientes limpos e vedados; evitar entulhos; checar calçados e roupas antes de vestir; vedar frestas; procurar atendimento médico imediatamente após picada.</p></li>
-        <li><p><span></span>Curiosidade: Pode sobreviver longos períodos sem alimento e tolerar grandes variações de temperatura, o que facilita sua presença em áreas humanas.</p></li>
+        <li><p><span></span><strong>Nome científico:</strong> Tityus serrulatus</p></li>
+        <li><p><span></span><strong>Distribuição geográfica:</strong> Amplamente encontrado no Brasil — com maior incidência nas regiões Sudeste, Centro-Oeste e Nordeste; adapta-se bem a áreas urbanas.</p></li>
+        <li><p><span></span><strong>Habitat natural:</strong> Prefere locais escuros e úmidos, como entulhos, frestas de muros, pilhas de madeira, pedras e dentro de residências (sob móveis, em calçados, caixas etc.).</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Noturno e solitário. Evita contato, mas pica se for pressionado, manipulado ou surpreendido.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Predominantemente neurotóxico; provoca dor local intensa, sudorese, vômito, taquicardia, hipertensão e, em casos severos, convulsões e insuficiência cardiorrespiratória.</p></li>
+        <li><p><span></span><strong>Periculosidade:</strong> Alto risco — picadas podem ser fatais sem atendimento médico rápido. Crianças, idosos e portadores de comorbidades correm maior risco.</p></li>
+        <li><p><span></span><strong>Reprodução:</strong> Partenogênese (fêmeas podem gerar descendentes sem acasalamento), o que facilita a rápida expansão populacional em ambientes urbanos.</p></li>
+        <li><p><span></span><strong>Importância ecológica:</strong> Controla populações de insetos, especialmente baratas, atuando como predador natural em ecossistemas urbanos e rurais.</p></li>
+        <li><p><span></span><strong>Medidas de prevenção:</strong> Manter ambientes limpos e vedados; evitar entulhos; checar calçados e roupas antes de vestir; vedar frestas; procurar atendimento médico imediatamente após picada.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Pode sobreviver longos períodos sem alimento e tolerar grandes variações de temperatura, o que facilita sua presença em áreas humanas.</p></li>
+        </ul>
+        `,
+    },
+
+    {
+        Nome: "Cobra-Taipan",
+
+        Categoria: "Extremamente-Letais",
+
+        Resumo:  `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Oxyuranus scutellatus</p></li>
+        <li><p><span></span><strong>Distribuição:</strong> Norte e nordeste da Austrália, além de algumas regiões da Nova Guiné.</p></li>
+        <li><p><span></span><strong>Habitat:</strong> Florestas tropicais, áreas costeiras e planícies abertas com vegetação densa.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Extremamente ágil e defensiva quando ameaçada, podendo atacar rapidamente.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Neurotóxico e hemotóxico, capaz de causar paralisia e falência de órgãos em poucos minutos.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Considerada uma das cobras mais venenosas do planeta, seu veneno pode matar dezenas de pessoas com uma única mordida.</p></li>
+        </ul>
+        `,
+
+        Detalhado:  `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Oxyuranus scutellatus</p></li>
+        <li><p><span></span><strong>Distribuição geográfica:</strong> Encontrada principalmente no norte e nordeste da Austrália, além de algumas ilhas da Nova Guiné.</p></li>
+        <li><p><span></span><strong>Habitat natural:</strong> Prefere ambientes quentes e úmidos, como florestas tropicais, planícies costeiras e regiões com densa vegetação e abrigo natural.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Embora evite humanos, pode se tornar extremamente agressiva se acuada. É uma das cobras mais rápidas e precisas em ataque do mundo.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Altamente neurotóxico e hemotóxico; age rapidamente sobre o sistema nervoso central e o sangue, causando paralisia muscular, colapso respiratório e hemorragias internas. Uma única mordida pode conter veneno suficiente para matar cerca de 100 pessoas.</p></li>
+        <li><p><span></span><strong>Periculosidade:</strong> Extremamente alta — mesmo com antídoto disponível, o tempo de resposta deve ser imediato para evitar morte por insuficiência respiratória.</p></li>
+        <li><p><span></span><strong>Reprodução:</strong> Ovípara; as fêmeas depositam entre 10 e 20 ovos em locais protegidos e úmidos, como buracos no solo e troncos ocos.</p></li>
+        <li><p><span></span><strong>Importância ecológica:</strong> Predadora natural de roedores e pequenos mamíferos, desempenhando papel essencial no controle populacional dessas espécies em ecossistemas australianos.</p></li>
+        <li><p><span></span><strong>Medidas de prevenção:</strong> Evitar andar descalço ou abrir buracos em áreas rurais australianas; manter distância segura e acionar autoridades especializadas em caso de avistamento.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Seu veneno é tão potente que, antes da criação do soro antiofídico, nenhuma vítima confirmada sobreviveu a uma mordida.</p></li>
         </ul>
         `,
     }
