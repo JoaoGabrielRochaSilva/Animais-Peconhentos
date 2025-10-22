@@ -96,6 +96,7 @@ main {
     flex-flow: column wrap;
 
     background-color: rgba(0, 0, 0, 0.422);
+    border: 2px solid rgba(0, 128, 0, 0.767);
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.36);
 }
@@ -129,11 +130,40 @@ div.Animais {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
 
     animation-name: aparecer;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;   
+}
+
+div.Animais > div.busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.busca:not(div.busca:first-child) {
+    margin-top: 30px;
+}
+
+div.informacao {
+    height: 330px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+div.informacao::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+}
+
+div.informacao::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 128, 0, 0.512);
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 div.informacao > ul {

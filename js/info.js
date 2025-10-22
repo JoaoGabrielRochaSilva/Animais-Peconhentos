@@ -92,5 +92,121 @@ const Animais = [
         <li><p><span></span><strong>Curiosidade:</strong> Seu veneno é tão potente que, antes da criação do soro antiofídico, nenhuma vítima confirmada sobreviveu a uma mordida.</p></li>
         </ul>
         `,
+    },
+
+    {
+        Nome: "Aranha-de-Jardim",
+        Categoria: "Não-Letais",
+        Resumo: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Argiope argentata</p></li>
+        <li><p><span></span><strong>Distribuição:</strong> Presente em toda a América Latina, especialmente em áreas quentes e úmidas.</p></li>
+        <li><p><span></span><strong>Habitat:</strong> Jardins, quintais, matas e locais com vegetação onde possa fixar suas teias.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Pacífica e sedentária, raramente ataca; costuma permanecer no centro da teia aguardando presas.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Fraco; usado apenas para imobilizar pequenos insetos, não representa risco para humanos.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Suas teias possuem um padrão em forma de “X”, facilmente visível ao sol.</p></li>
+        </ul>
+        `,
+
+        Detalhado: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Argiope argentata</p></li>
+        <li><p><span></span><strong>Distribuição geográfica:</strong> Encontrada desde o sul dos Estados Unidos até o sul do Brasil, sendo muito comum em áreas rurais e urbanas.</p></li>
+        <li><p><span></span><strong>Habitat natural:</strong> Vive em locais abertos e ensolarados, como jardins, plantações, bordas de matas e cercas, onde constrói suas grandes teias verticais.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Tranquila e não agressiva. Permanece imóvel no centro da teia e só reage se for diretamente perturbada.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Leve e inofensivo para humanos; serve apenas para paralisar presas pequenas, como moscas e mariposas.</p></li>
+        <li><p><span></span><strong>Periculosidade:</strong> Mínima — picadas são raras e provocam apenas irritação passageira na pele.</p></li>
+        <li><p><span></span><strong>Reprodução:</strong> Fêmeas maiores constroem casulos com dezenas de ovos, protegendo-os nas proximidades da teia principal.</p></li>
+        <li><p><span></span><strong>Importância ecológica:</strong> Controla populações de insetos e auxilia na manutenção do equilíbrio ambiental.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> É facilmente reconhecida pelas faixas prateadas no corpo e pelo desenho em “X” de sua teia, que reflete a luz solar.</p></li>
+        </ul>
+        `
+    },
+
+    {
+        Nome: "Escorpiao-Preto",
+        Categoria: "Não-Letais",
+        Resumo: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Bothriurus araguayae</p></li>
+        <li><p><span></span><strong>Distribuição:</strong> Amplamente encontrado no Brasil, especialmente nas regiões Centro-Oeste e Sudeste.</p></li>
+        <li><p><span></span><strong>Habitat:</strong> Vive em solos arenosos, sob pedras, troncos e folhas secas.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Noturno e discreto; evita contato com humanos e prefere ambientes secos.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> De baixa toxicidade; causa apenas dor leve e inchaço local.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Alimenta-se principalmente de cupins e pequenos insetos, ajudando no controle biológico.</p></li>
+        </ul>
+        `,
+
+        Detalhado: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Bothriurus araguayae</p></li>
+        <li><p><span></span><strong>Distribuição geográfica:</strong> Espécie típica do Brasil central, mas também encontrada em áreas de cerrado e caatinga.</p></li>
+        <li><p><span></span><strong>Habitat natural:</strong> Prefere solos arenosos e secos, abrigando-se sob pedras, troncos caídos e folhas mortas.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Solitário e de hábitos noturnos; raramente se aproxima de ambientes humanos, exceto em busca de abrigo.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Possui baixa toxicidade; sua picada é comparável à de uma abelha, com dor e vermelhidão local passageiras.</p></li>
+        <li><p><span></span><strong>Periculosidade:</strong> Muito baixa — não oferece risco à vida humana e raramente causa complicações.</p></li>
+        <li><p><span></span><strong>Reprodução:</strong> Vivíparo; as fêmeas carregam os filhotes no dorso até que estejam prontos para caçar sozinhos.</p></li>
+        <li><p><span></span><strong>Importância ecológica:</strong> Atua como predador natural de insetos e pequenos artrópodes, contribuindo para o controle de pragas.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Apesar do nome, sua coloração pode variar entre marrom-escuro e preto-acinzentado dependendo da região.</p></li>
+        </ul>
+        `
+    },
+
+    {
+        Nome: "Cobra-Coral",
+        Categoria: "Letais",
+        Resumo: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Micrurus corallinus</p></li>
+        <li><p><span></span><strong>Distribuição:</strong> Ocorre em várias regiões do Brasil, especialmente no Sudeste, Centro-Oeste e Sul.</p></li>
+        <li><p><span></span><strong>Habitat:</strong> Vive em áreas florestais, matas ciliares e sob folhas secas ou troncos caídos.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Tímida e reclusa; raramente ataca, preferindo se esconder diante de ameaças.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Neurotóxico potente; afeta o sistema nervoso, podendo causar paralisia e dificuldade respiratória.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> É frequentemente confundida com cobras falsas-corais, que imitam sua coloração como forma de defesa.</p></li>
+        </ul>
+        `,
+
+        Detalhado: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Micrurus corallinus</p></li>
+        <li><p><span></span><strong>Distribuição geográfica:</strong> Encontrada em boa parte do território brasileiro, especialmente nas regiões Sudeste e Sul, com registros também no Cerrado e Mata Atlântica.</p></li>
+        <li><p><span></span><strong>Habitat natural:</strong> Vive em florestas, áreas úmidas e locais com muita vegetação, geralmente sob troncos, folhas ou dentro de tocas abandonadas.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> É uma serpente tímida e de hábitos noturnos. Raramente morde, a não ser quando manipulada ou acuada.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Extremamente neurotóxico — afeta o sistema nervoso central, podendo causar visão turva, dificuldade para respirar e paralisia muscular. Requer tratamento rápido com soro antielapídico.</p></li>
+        <li><p><span></span><strong>Periculosidade:</strong> Alta — sem atendimento médico, pode levar à insuficiência respiratória, embora acidentes sejam raros devido ao comportamento reservado da espécie.</p></li>
+        <li><p><span></span><strong>Reprodução:</strong> Ovípara; coloca entre 3 e 10 ovos em locais úmidos e protegidos, que eclodem após cerca de 60 dias.</p></li>
+        <li><p><span></span><strong>Importância ecológica:</strong> Controla populações de pequenas serpentes e lagartos, sendo importante no equilíbrio da cadeia alimentar.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Sua coloração alternada de faixas vermelhas, pretas e brancas serve como aviso visual para predadores — um exemplo clássico de aposematismo.</p></li>
+        </ul>
+        `
+    },
+
+    {
+        Nome: "Aranha-Marrom",
+        Categoria: "Letais",
+        Resumo: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Loxosceles intermedia</p></li>
+        <li><p><span></span><strong>Distribuição:</strong> Comum no Brasil, especialmente nas regiões Sul e Sudeste.</p></li>
+        <li><p><span></span><strong>Habitat:</strong> Locais escuros e secos, como roupas guardadas, sapatos e frestas de parede.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> Discreta e não agressiva; pica apenas quando pressionada ou surpreendida.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Necrosante; causa destruição dos tecidos e, em casos graves, insuficiência renal.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Seu veneno é estudado na medicina por seu potencial uso em tratamentos de regeneração tecidual.</p></li>
+        </ul>
+        `,
+
+        Detalhado: `
+        <ul>
+        <li><p><span></span><strong>Nome científico:</strong> Loxosceles intermedia</p></li>
+        <li><p><span></span><strong>Distribuição geográfica:</strong> Espécie nativa da América do Sul, amplamente distribuída no Brasil, com maior ocorrência nas regiões Sul e Sudeste.</p></li>
+        <li><p><span></span><strong>Habitat natural:</strong> Prefere ambientes escuros, secos e pouco movimentados — costuma ser encontrada em roupas, calçados, armários e porões.</p></li>
+        <li><p><span></span><strong>Comportamento:</strong> É uma aranha tímida e de pequeno porte, que evita contato com humanos. As picadas geralmente ocorrem durante o sono, quando a aranha é pressionada.</p></li>
+        <li><p><span></span><strong>Veneno:</strong> Potente e necrosante, destrói tecidos e vasos sanguíneos, podendo causar lesões graves na pele e necrose local. Em casos mais sérios, pode afetar órgãos internos.</p></li>
+        <li><p><span></span><strong>Periculosidade:</strong> Alta — o tratamento deve ser imediato para evitar complicações. Casos fatais são raros, mas exigem atenção médica urgente.</p></li>
+        <li><p><span></span><strong>Reprodução:</strong> Produz pequenos casulos de ovos escondidos em cantos escuros. Cada fêmea pode gerar dezenas de filhotes por ninhada.</p></li>
+        <li><p><span></span><strong>Importância ecológica:</strong> Atua no controle natural de insetos domésticos, como baratas e mosquitos.</p></li>
+        <li><p><span></span><strong>Curiosidade:</strong> Apesar da fama, vive em grande parte dentro de casas urbanas sem causar acidentes, pois raramente entra em contato direto com humanos.</p></li>
+        </ul>
+        `
     }
 ]
