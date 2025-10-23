@@ -208,5 +208,59 @@ const Animais = [
         <li><p><span></span><strong>Curiosidade:</strong> Apesar da fama, vive em grande parte dentro de casas urbanas sem causar acidentes, pois raramente entra em contato direto com humanos.</p></li>
         </ul>
         `
+    },
+
+    {
+        Nome: "Aranha-Teia-de-Funil",
+        Categoria: "Extremamente-Letais",
+        Resumo: `
+        <ul>
+            <li><p><span></span><strong>Nome científico:</strong> Atrax robustus</p></li>
+            <li><p><span></span><strong>Distribuição:</strong> regiões costeiras próximas a Sydney, Austrália.</p></li>
+            <li><p><span></span><strong>Habitat:</strong> vive em solos úmidos, sob troncos, pedras e entulhos, onde constrói teias em forma de funil.</p></li>
+            <li><p><span></span><strong>Veneno:</strong> contém uma potente neurotoxina (atracotoxina) capaz de causar falência respiratória e cardíaca.</p></li>
+            <li><p><span></span><strong>Perigosidade:</strong> considerada a aranha mais perigosa do mundo.</p></li>
+            <li><p><span></span><strong>Curiosidade:</strong> apesar da fama, não há mortes registradas desde a introdução do antiveneno em 1981.</p></li>
+        </ul>
+        `,
+
+        Detalhado: `
+        <ul>
+            <li><p><span></span><strong>Nome científico:</strong> Atrax robustus</p></li>
+            <li><p><span></span><strong>Distribuição:</strong> encontrada principalmente nas regiões costeiras próximas a Sydney, na Austrália.</p></li>
+            <li><p><span></span><strong>Habitat:</strong> prefere ambientes úmidos e sombreados, vivendo sob troncos, pedras e materiais empilhados. Constrói teias em formato de funil, com uma entrada estreita e um túnel onde espera a presa.</p></li>
+            <li><p><span></span><strong>Veneno:</strong> seu veneno possui uma neurotoxina extremamente potente chamada atracotoxina, que age rapidamente no sistema nervoso, podendo causar espasmos, dificuldade respiratória e falência cardíaca.</p></li>
+            <li><p><span></span><strong>Perigosidade:</strong> é considerada uma das aranhas mais letais do planeta. Antes do antiveneno (desenvolvido em 1981), houve diversos casos fatais. Hoje, com tratamento rápido, as mortes são evitáveis.</p></li>
+            <li><p><span></span><strong>Medidas de prevenção:</strong> usar luvas e calçados em áreas rurais ou ao manusear materiais empilhados; verificar sapatos e roupas antes de vestir; procurar atendimento médico imediato em caso de picada.</p></li>
+            <li><p><span></span><strong>Curiosidade:</strong> apenas o macho é perigoso para humanos, e apesar da fama mortal, não há mortes registradas desde a criação do soro antiveneno.</p></li>
+        </ul>
+        `
+    },
+
+    {
+        Nome: "Peixe-Pedra",
+        Categoria: "Extremamente-Letais",
+        Resumo: `
+        <ul>
+            <li><p><span></span><strong>Nome científico:</strong> Synanceia verrucosa</p></li>
+            <li><p><span></span><strong>Distribuição:</strong> recifes e zonas costeiras do Indo-Pacífico e do norte da Austrália.</p></li>
+            <li><p><span></span><strong>Habitat:</strong> vive camuflado em fundos arenosos e rochosos, confundindo-se com o ambiente.</p></li>
+            <li><p><span></span><strong>Veneno:</strong> espinhos dorsais liberam toxinas extremamente dolorosas e potencialmente fatais.</p></li>
+            <li><p><span></span><strong>Perigosidade:</strong> considerado o peixe mais venenoso do mundo.</p></li>
+            <li><p><span></span><strong>Curiosidade:</strong> sua camuflagem é tão eficiente que pode ser pisado inadvertidamente; o veneno pode ser liberado mesmo após a morte do animal.</p></li>
+        </ul>
+        `,
+
+        Detalhado: `
+        <ul>
+            <li><p><span></span><strong>Nome científico:</strong> Synanceia verrucosa</p></li>
+            <li><p><span></span><strong>Distribuição:</strong> encontrado nos recifes e zonas costeiras do Indo-Pacífico, incluindo as águas do norte da Austrália.</p></li>
+            <li><p><span></span><strong>Habitat:</strong> vive em fundos arenosos e rochosos, muitas vezes camuflado entre corais e pedras, o que o torna difícil de ser identificado e aumenta o risco de acidentes.</p></li>
+            <li><p><span></span><strong>Veneno:</strong> seus espinhos dorsais injetam uma potente toxina que provoca dor extrema, necrose, inchaço e pode levar a choque anafilático e falência cardiovascular.</p></li>
+            <li><p><span></span><strong>Perigosidade:</strong> o envenenamento é potencialmente letal em poucas horas sem tratamento. É considerado o peixe mais venenoso conhecido.</p></li>
+            <li><p><span></span><strong>Medidas de prevenção:</strong> evitar caminhar descalço em áreas com corais ou pedras, usar calçados adequados e procurar atendimento médico imediato em caso de ferimento.</p></li>
+            <li><p><span></span><strong>Curiosidade:</strong> o peixe-pedra pode liberar seu veneno mesmo depois de morto e sua camuflagem é tão perfeita que pode se confundir totalmente com uma rocha.</p></li>
+        </ul>
+        `
     }
 ]

@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
 </head>
 
 <body>
@@ -33,36 +32,45 @@
 
         <div id="inicio" class="Animais">
 
-            <div class="Imagem">
-                <img src="imagens-animais-peconhentos/pexels-erik-karits-2093459-18159680.jpg">
+            <div id="barra-busca">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Nome Animal">
+                <span><img src="imagens-animais-peconhentos/lupa.png" alt="lupa"></span>
             </div>
 
-            <div class="conteudo">
-                <h2>Inicio</h2>
-                <ul>
-                    <li>
-                        <p>
-                            <span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus sed
-                            consequuntur iure vero nesciunt eaque quae adipisci commodi culpa repellendus distinctio
-                            accusamus architecto error, aspernatur minima. Dignissimos, nisi asperiores.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae
-                            doloremque voluptas ea consequuntur sequi pariatur recusandae voluptatem, eligendi quidem
-                            accusantium! Non maxime et iusto dolores blanditiis, iste nesciunt beatae?
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <span></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis reiciendis
-                            pariatur tenetur cum, cumque, non quasi laborum, officiis blanditiis placeat incidunt! Vero modi
-                            sequi ut blanditiis mollitia in quisquam.
-                        </p>
-                    </li>
-                </ul>
-                <a href="formulario.html"><button>Adicionar Espécie</button></a>
+            <div class="busca">
+                <div class="Imagem">
+                    <img src="imagens-animais-peconhentos/pexels-erik-karits-2093459-18159680.jpg">
+                </div>
+                <div class="conteudo">
+                    <h2>Inicio</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                <span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus sed
+                                consequuntur iure vero nesciunt eaque quae adipisci commodi culpa repellendus distinctio
+                                accusamus architecto error, aspernatur minima. Dignissimos, nisi asperiores.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae
+                                doloremque voluptas ea consequuntur sequi pariatur recusandae voluptatem, eligendi quidem
+                                accusantium! Non maxime et iusto dolores blanditiis, iste nesciunt beatae?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis reiciendis
+                                pariatur tenetur cum, cumque, non quasi laborum, officiis blanditiis placeat incidunt! Vero modi
+                                sequi ut blanditiis mollitia in quisquam.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="res-busca">
+
             </div>
 
         </div>
@@ -154,16 +162,46 @@
         </div>
 
         <div id="Extremamente-Letais" class="Animais">
-            <div class="Imagem">
-                <img src="imagens-animais-peconhentos/Cobra-taipan.jpg">
-            </div>
-            <div class="conteudo">
-                <h2>Cobra-Taipan</h2>
-                <div id="Cobra-Taipan" class="informacao Extremamente-Letais">
-                    
+
+            <div class="busca">
+                <div class="Imagem">
+                    <img src="imagens-animais-peconhentos/Cobra-taipan.jpg">
                 </div>
-                <button onclick="MaisOuResumo(this, 'Cobra-Taipan')">Mais Informações</button>
+                <div class="conteudo">
+                    <h2>Cobra-Taipan</h2>
+                    <div id="Cobra-Taipan" class="informacao Extremamente-Letais">
+                
+                    </div>
+                    <button onclick="MaisOuResumo(this, 'Cobra-Taipan')">Mais Informações</button>
+                </div>
             </div>
+
+            <div class="busca">
+                <div class="Imagem">
+                    <img src="imagens-animais-peconhentos/aranha-funil.jpg">
+                </div>
+                <div class="conteudo">
+                    <h2>Aranha-Teia-de-Funil</h2>
+                    <div id="Aranha-Teia-de-Funil" class="informacao Extremamente-Letais">
+                
+                    </div>
+                    <button onclick="MaisOuResumo(this, 'Aranha-Teia-de-Funil')">Mais Informações</button>
+                </div>
+            </div>
+
+            <div class="busca">
+                <div class="Imagem">
+                    <img src="imagens-animais-peconhentos/peixe-pedra.jpg">
+                </div>
+                <div class="conteudo">
+                    <h2>Peixe-Pedra</h2>
+                    <div id="Peixe-Pedra" class="informacao Extremamente-Letais">
+                
+                    </div>
+                    <button onclick="MaisOuResumo(this, 'Peixe-Pedra')">Mais Informações</button>
+                </div>
+            </div>
+
         </div>
 
     </main>
