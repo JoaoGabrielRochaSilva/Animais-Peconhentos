@@ -1,8 +1,9 @@
 const Animais = [
     {
         Nome: "Tarantula",
-
+        Titulo: "Tarântula",
         Categoria: "Não-Letais",
+        Imagem: "imagens-animais-peconhentos/pexels-jean-paul-montanaro-49563862-17907410.jpg",
 
         Resumo: `
         <ul>
@@ -32,7 +33,8 @@ const Animais = [
 
     {
         Nome: "Escorpiao-Amarelo",
-
+        Titulo: "Escorpião-Amarelo",
+        Imagem: "imagens-animais-peconhentos/pexels-pixelboomer-29448651.jpg",
         Categoria: "Letais",
 
         Resumo: `
@@ -64,7 +66,8 @@ const Animais = [
 
     {
         Nome: "Cobra-Taipan",
-
+        Titulo: "Cobra-Taipan",
+        Imagem: "imagens-animais-peconhentos/Cobra-taipan.jpg",
         Categoria: "Extremamente-Letais",
 
         Resumo:  `
@@ -96,7 +99,10 @@ const Animais = [
 
     {
         Nome: "Aranha-de-Jardim",
+        Titulo: "Aranha-de-Jardim",
+        Imagem: "imagens-animais-peconhentos/aranha-jardim.jpg",
         Categoria: "Não-Letais",
+
         Resumo: `
         <ul>
         <li><p><span></span><strong>Nome científico:</strong> Argiope argentata</p></li>
@@ -125,7 +131,10 @@ const Animais = [
 
     {
         Nome: "Escorpiao-Preto",
+        Titulo: "Escorpião-Preto",
+        Imagem: "imagens-animais-peconhentos/escorpiao-preto.jpg",
         Categoria: "Não-Letais",
+
         Resumo: `
         <ul>
         <li><p><span></span><strong>Nome científico:</strong> Bothriurus araguayae</p></li>
@@ -154,7 +163,10 @@ const Animais = [
 
     {
         Nome: "Cobra-Coral",
+        Titulo: "Cobra-Coral",
+        Imagem: "imagens-animais-peconhentos/cobra-coral.jpg",
         Categoria: "Letais",
+
         Resumo: `
         <ul>
         <li><p><span></span><strong>Nome científico:</strong> Micrurus corallinus</p></li>
@@ -183,7 +195,10 @@ const Animais = [
 
     {
         Nome: "Aranha-Marrom",
+        Titulo: "Aranha-Marrom",
+        Imagem: "imagens-animais-peconhentos/aranha-marrom.jpg",
         Categoria: "Letais",
+
         Resumo: `
         <ul>
         <li><p><span></span><strong>Nome científico:</strong> Loxosceles intermedia</p></li>
@@ -212,7 +227,10 @@ const Animais = [
 
     {
         Nome: "Aranha-Teia-de-Funil",
+        Titulo: "Aranha-Teia-de-Funil",
+        Imagem: "imagens-animais-peconhentos/aranha-funil.jpg",
         Categoria: "Extremamente-Letais",
+
         Resumo: `
         <ul>
             <li><p><span></span><strong>Nome científico:</strong> Atrax robustus</p></li>
@@ -239,7 +257,10 @@ const Animais = [
 
     {
         Nome: "Peixe-Pedra",
+        Titulo: "Peixe-Pedra",
+        Imagem: "imagens-animais-peconhentos/peixe-pedra.jpg",
         Categoria: "Extremamente-Letais",
+
         Resumo: `
         <ul>
             <li><p><span></span><strong>Nome científico:</strong> Synanceia verrucosa</p></li>

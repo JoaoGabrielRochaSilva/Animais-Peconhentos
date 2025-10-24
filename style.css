@@ -180,11 +180,20 @@ div.Animais {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+}
 
+div.Animais.show {
     animation-name: aparecer;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;   
+    animation-timing-function: ease-in-out;
+}
+
+div.Animais.hidden {
+    animation-name: desaparecer;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 
 div.Animais > div.busca {
@@ -230,6 +239,17 @@ div.informacao > ul {
     to {
         transform: translateX(0px);
         opacity: 100%;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    to {
+        transform: translateX(-100px);
+        opacity: 0%;
     }
 }
 
@@ -322,7 +342,7 @@ button:hover {
         margin-bottom: 20px;
     }
 
-    div.Animais {
+    div.Animais > div.busca {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -332,6 +352,10 @@ button:hover {
     div.conteudo {
         padding: 0px;
         margin: auto;
+        width: 100%;
+    }
+
+    div.conteudo > h2 {
         width: 100%;
     }
 }
