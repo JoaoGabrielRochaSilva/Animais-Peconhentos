@@ -1,4 +1,91 @@
 let divs = document.querySelectorAll(".Animais");
+let pesquisa = document.getElementById("pesquisa");
+let lupa = document.getElementById("lupa");
+
+lupa.addEventListener("click", () => Pesquisar(pesquisa));
+pesquisa.addEventListener("input", () => completar(pesquisa));
+
+function Pesquisar(pesquisa) {
+    let divres = document.getElementById("res-busca");
+
+    if (divres.classList.contains("show")) {
+        divres.classList.remove("show");
+        divres.classList.add("hidden"); 
+        setTimeout(() => {divres.innerHTML = " "; divres.style.display = "none";}, 500);
+    }
+
+    let animal = Animais.find(function(animalBusca) {
+        return animalBusca.Titulo == pesquisa.value;
+    });
+
+    let divAnimal = criar(animal);
+
+    setTimeout(() => {
+        divres.appendChild(divAnimal); 
+        divres.style.display = "flex";
+        divres.classList.remove("hidden");
+        divres.classList.add("show");
+    }, 500);
+}
+
+function complete(p, pesquisa, divCom) {
+    pesquisa.value = p.innerHTML;
+    divCom.innerHTML = " ";
+}
+
+function completar(pesquisa) {
+    let divCom = document.getElementById("completar");
+    let divsbusca = document.querySelectorAll(".animal-busca");
+    let strpesquisa = pesquisa.value;
+
+    if (strpesquisa.length > 0) {
+
+        for(let i=0; i < Animais.length; i++) {
+            let j = 0;
+
+            while(j < strpesquisa.length && strpesquisa[j] == Animais[i].Titulo[j]) {
+                j++;
+                console.log("oi");
+            }
+
+            if (j == strpesquisa.length) {
+                let res = true;
+
+                for(let y=0; y < divsbusca.length; y++) {
+
+                    if(divsbusca[y].innerHTML == Animais[i].Titulo) {
+                        res = false;
+                    }
+                }
+
+                if (res) {
+                    let p = document.createElement("p");
+                    p.innerHTML = Animais[i].Titulo;
+                    p.setAttribute("class", "animal-busca");
+                    p.addEventListener("click", () => complete(p, pesquisa, divCom));
+
+                    divCom.appendChild(p);
+                }
+                
+            }
+
+            for(let i=0; i < divsbusca.length; i++) {
+                let j = 0;
+
+                while(j < strpesquisa.length && strpesquisa[j] == divsbusca[i].innerHTML[j])
+                    j++;
+
+                if (j != strpesquisa.length) {
+                    divCom.removeChild(divsbusca[i]);
+                }
+            }
+        }
+
+    } else {
+        divCom.innerHTML = " ";
+    }
+        
+}
 
 function criar(animal) {
     let divAnimal = document.createElement("div");
@@ -70,6 +157,7 @@ function inicio() {
 
     for (let i=0; i < divs.length; i++) {
         if (divs[i].id == "inicio") {
+            document.getElementById("res-busca").innerHTML = " ";
             setTimeout(() => {divs[i].style.display = "flex";}, 500);
             divs[i].classList.remove("hidden");
             divs[i].classList.add("show");

@@ -33,8 +33,11 @@
         <div id="inicio" class="Animais">
 
             <div id="barra-busca">
-                <input type="text" name="pesquisa" id="pesquisa" placeholder="Nome Animal">
-                <span><img src="imagens-animais-peconhentos/lupa.png" alt="lupa"></span>
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Nome Animal" autocomplete="off">
+                <span><a href="#res-busca"><img src="imagens-animais-peconhentos/lupa.png" alt="lupa" id="lupa"></a></span>
+                <div id="completar">
+
+                </div>
             </div>
 
             <div class="busca">
@@ -69,8 +72,8 @@
                 </div>
             </div>
 
-            <div id="res-busca">
-
+            <div id="res-busca" class="Animais">
+                
             </div>
 
         </div>
@@ -88,6 +91,10 @@
         </div>
 
     </main>
+
+    <footer>
+        <p>&copy; Animais Peçonhentos - 2025</p>
+    </footer>
 
     <script src="script.js"></script>
     <script src="js/info.js"></script>

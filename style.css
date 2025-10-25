@@ -104,6 +104,7 @@ main {
 div#barra-busca {
     width: 50%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 div#barra-busca> input[type="text"] {
@@ -127,6 +128,7 @@ div#barra-busca> input[type="text"]:focus {
 }
 
 div#barra-busca > span {
+    width: 30%;
     vertical-align: middle;
     margin-left: -4px;
 }
@@ -138,14 +140,40 @@ div#barra-busca > span > img {
     transition: 0.3s;
 }
 
-div#barra-busca > span > img {
+div#barra-busca > span > a > img {
     background-color: green;
     border-radius: 0px 20px 20px 0px;
 }
 
-div#barra-busca > span > img:hover {
+div#barra-busca > span > a > img:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+div#completar {
+    margin-left: 70px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.455);
+    border: 1px solid green;
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.43);
+}
+
+div#completar > p {
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+div#completar > p:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.689);
+}
+
+div#completar > p:not(p:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.286);
 }
 
 div.Imagem {
@@ -198,7 +226,7 @@ div.Animais.hidden {
 
 div.Animais > div.busca {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
 }
@@ -327,6 +355,21 @@ button:hover {
     transform: scale(1.05)
 }
 
+footer {
+    background: linear-gradient(180deg, #1B4332 0%, #2D6A4F 100%);
+    margin: 0px;
+    padding-bottom: 60px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.42);
+}
+
+footer > p {
+    text-align: center;
+    background-color: #255b44;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.165);
+}
+
 @media screen and (max-width: 760px) {
     main {
         width: 70%;
@@ -340,6 +383,15 @@ button:hover {
         max-width: 500px;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    div#barra-busca {
+        width: 100%;
+    }
+
+    div#completar {
+        width: 60%;
+        margin-left: 50px;
     }
 
     div.Animais > div.busca {
