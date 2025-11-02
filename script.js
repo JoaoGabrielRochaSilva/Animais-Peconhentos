@@ -15,17 +15,23 @@ function Pesquisar(pesquisa) {
     }
 
     let animal = Animais.find(function(animalBusca) {
-        return animalBusca.Titulo == pesquisa.value;
+        return animalBusca.Titulo.toLowerCase() == pesquisa.value.toLowerCase().replaceAll(" ", "-");
     });
 
-    let divAnimal = criar(animal);
+    if (animal != undefined) {
+        let divAnimal = criar(animal);
 
-    setTimeout(() => {
-        divres.appendChild(divAnimal); 
-        divres.style.display = "flex";
-        divres.classList.remove("hidden");
-        divres.classList.add("show");
-    }, 500);
+        setTimeout(() => {
+            divres.appendChild(divAnimal); 
+            divres.style.display = "flex";
+            divres.classList.remove("hidden");
+            divres.classList.add("show");
+            window.location.href = "#res-busca";
+        }, 500);
+
+    } else if (pesquisa.value.replaceAll(" ", "") != "")
+        alert("Esse animal não está disponível no catálago.");
+     
 }
 
 function complete(p, pesquisa, divCom) {
@@ -36,16 +42,15 @@ function complete(p, pesquisa, divCom) {
 function completar(pesquisa) {
     let divCom = document.getElementById("completar");
     let divsbusca = document.querySelectorAll(".animal-busca");
-    let strpesquisa = pesquisa.value;
+    let strpesquisa = pesquisa.value.replaceAll(" ", "-");
 
     if (strpesquisa.length > 0) {
 
         for(let i=0; i < Animais.length; i++) {
             let j = 0;
 
-            while(j < strpesquisa.length && strpesquisa[j] == Animais[i].Titulo[j]) {
+            while(j < strpesquisa.length && strpesquisa[j].toLowerCase() == Animais[i].Titulo[j].toLowerCase()) {
                 j++;
-                console.log("oi");
             }
 
             if (j == strpesquisa.length) {
@@ -72,8 +77,10 @@ function completar(pesquisa) {
             for(let i=0; i < divsbusca.length; i++) {
                 let j = 0;
 
-                while(j < strpesquisa.length && strpesquisa[j] == divsbusca[i].innerHTML[j])
+                while(j < strpesquisa.length && strpesquisa[j].toLowerCase() == divsbusca[i].innerHTML[j].toLowerCase()) {
                     j++;
+                }
+                    
 
                 if (j != strpesquisa.length) {
                     divCom.removeChild(divsbusca[i]);
