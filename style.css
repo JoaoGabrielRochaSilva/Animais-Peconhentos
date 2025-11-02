@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,7 +25,7 @@ header {
 
 .material-symbols-outlined>p {
     color: #95D5B2;
-    margin-left: 30px;
+    margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 2em;
@@ -36,7 +37,30 @@ header {
     transform: scale(1.05);
 }
 
+#pag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 
+#pag > span > a {
+    color: #D8F3DC;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: "Cinzel Decorative", serif;
+    border-bottom: 1px solid #D8F3DC;
+    transition-duration: 0.3s;
+}
+
+#pag > span > a:hover {
+    color: #acf2b7;
+    border-color: #acf2b7;
+}
 
 header>h1 {
     text-align: center;
@@ -102,14 +126,15 @@ main {
 }
 
 div#barra-busca {
-    width: 50%;
+    width: 70%;
     text-align: center;
+    margin: 0px auto 20px auto;
     margin-bottom: 20px;
 }
 
 div#barra-busca> input[type="text"] {
     width: 70%;
-    height: 35px;
+    height: 40px;
     padding-left: 5px;
 
     border-radius: 20px 0px 0px 20px;
@@ -133,7 +158,7 @@ div#barra-busca > span {
     margin-left: -4px;
 }
 
-div#barra-busca > span > img {
+div#barra-busca > span > a > img {
     height: 100%;
     max-height: 40px;
     background-color: green;
@@ -149,7 +174,6 @@ div#barra-busca > span > a > img {
 
 div#barra-busca > span > a > img:hover {
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 div#completar {
@@ -181,11 +205,9 @@ div#completar > p:not(p:last-child) {
 
 div.Imagem {
     width: 40%;
-    min-width: 300px;
+    min-width: 200px;
     max-width: 500px;
-    padding: 0px 0px 0px;
-    margin: 15px 50px 0px 0px;
-
+    margin-right: 35px;
     border-radius: 8px;
 
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.411);
@@ -198,7 +220,7 @@ div.Imagem:hover {
 
 div.Imagem>img {
     width: 100%;
-    min-width: 290px;
+    min-width: 200px;
     max-width: 500px;
     height: 100%;
     margin-bottom: -5px;
@@ -208,7 +230,7 @@ div.Imagem>img {
 
 div.Animais {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: column nowrap;
 }
@@ -231,7 +253,6 @@ div.Animais > div.busca {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 div.busca:not(div.busca:first-child) {
@@ -386,6 +407,8 @@ footer {
 
 footer > p {
     text-align: center;
+    font-family: "Cinzel Decorative";
+    font-weight: bold;
     background-color: #255b44;
     padding: 10px;
     margin: auto;
@@ -394,26 +417,30 @@ footer > p {
 
 @media screen and (max-width: 760px) {
     main {
-        width: 70%;
-        flex-flow: column wrap;
+        width: 85%;
+        flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        padding: 40px;
+        padding: 35px;
+
+        margin: 0px auto;
+        border-radius: 0px;
+        border-top: none;
+        border-bottom: none;
     }
 
 
     div#barra-busca {
         width: 100%;
-        margin-left: -6%;
     }
 
     div#completar {
-        width: 40%;
+        width: 35%;
+        margin-left: 10%;
     }
 
     div.Animais {
         width: 100%;
-        margin-left: 4%;
     }
 
     div.Animais > div.busca {
@@ -421,24 +448,52 @@ footer > p {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
     }
 
     div.Imagem {
-        width: 90%;
-        min-width: 290px;
+        width: 100%;
+        min-width: 200px;
         max-width: 500px;
         margin-bottom: 20px;
-        align-self: center;
+        margin-right: 0px;
     }
 
     div.conteudo {
         padding: 0px;
-        width: 90%;
-        align-self: self-start;
+        width: 100%;
     }
 
     div.conteudo > h2 {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    div.Animais {
+        align-items: stretch;
+    }
+
+    div.Animais > div.busca {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+
+    div.Imagem {
+        width: 50%;
+        min-width: 200px;
+        max-width: 500px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    div.conteudo {
+        padding: 0px;
+        width: 50%;
+        max-width: 700px;
     }
 }
