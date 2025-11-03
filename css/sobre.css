@@ -1,0 +1,512 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagens-animais-peconhentos/folhas2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(180deg, #1B4332 0%, #2D6A4F 100%);
+    width: 100%;
+    padding-top: 10px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.545);
+
+}
+
+.material-symbols-outlined>p {
+    color: #95D5B2;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 2em;
+    transition: 0.3s;
+}
+
+.material-symbols-outlined>p:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#pag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#pag > span > a {
+    color: #D8F3DC;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    text-decoration: none;
+    margin-right: 25px;
+    font-family: "Cinzel Decorative", serif;
+    border-bottom: 1px solid #D8F3DC;
+    transition-duration: 0.3s;
+}
+
+#pag > span > a:hover {
+    color: #acf2b7;
+    border-color: #acf2b7;
+}
+
+header>h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #D8F3DC;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-family: "Cinzel Decorative", serif;
+    padding: 20px;
+}
+
+header>nav {
+    background-color: #255b44;
+    padding: 25px;
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.335);
+}
+
+nav>input {
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1em;
+
+    flex-basis: 20%;
+    padding: 15px;
+
+    background-color: #40916C;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.266);
+    transition-duration: 0.5s;
+}
+
+nav>input:hover, nav>input:focus {
+    cursor: pointer;
+    background-color: #2D6A4F;
+    transform: scale(1.05);
+}
+
+main {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    background-color: rgba(0, 0, 0, 0.587);
+    border: 2px solid rgba(47, 111, 47, 0.767);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.36);
+}
+
+div#barra-busca {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto 20px auto;
+    margin-bottom: 20px;
+}
+
+div#barra-busca> input[type="text"] {
+    width: 70%;
+    height: 40px;
+    padding-left: 5px;
+
+    border-radius: 20px 0px 0px 20px;
+    border: 3px solid green;
+    background-color: rgba(0, 0, 0, 0.455);
+    color: rgb(255, 255, 255);
+    outline: none;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.475);
+    transition: 0.3s;
+}
+
+div#barra-busca> input[type="text"]:focus {
+    border: 3px solid rgb(0, 108, 0);
+    background-color: rgba(0, 0, 0, 0.294);  
+}
+
+div#barra-busca > span {
+    width: 30%;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+
+div#barra-busca > span > a > img {
+    height: 100%;
+    max-height: 40px;
+    background-color: green;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.475);
+    transition: 0.3s;
+}
+
+div#barra-busca > span > a > img {
+    background-color: green;
+    border-radius: 0px 20px 20px 0px;
+}
+
+div#barra-busca > span > a > img:hover {
+    cursor: pointer;
+}
+
+div#completar {
+    position: absolute;
+    margin-left: 8%;
+    width: 15%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid green;
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.43);
+}
+
+div#completar > p {
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+div#completar > p:hover {
+    cursor: pointer;
+    background-color: rgb(42, 42, 42);
+}
+
+div#completar > p:not(p:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.286);
+}
+
+div.Imagem {
+    width: 35%;
+    min-width: 200px;
+    max-width: 500px;
+    border-radius: 8px;
+
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.411);
+    transition: 0.3s;
+}
+
+div.Imagem:hover {
+    transform: scale(1.05);
+}
+
+div.Imagem>img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+    height: 100%;
+    margin-bottom: -5px;
+    border-radius: 8px;
+    border: 5px solid rgba(47, 111, 47, 0.513);
+}
+
+div.Animais {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+div.Animais.show {
+    animation-name: aparecer;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+div.Animais.hidden {
+    animation-name: desaparecer;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+div.Animais > div.busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse;
+}
+
+div.busca:not(div.busca:first-child) {
+    margin-top: 30px;
+}
+
+div.informacao {
+    height: 410px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+div.informacao::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+}
+
+div.informacao::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 128, 0, 0.512);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+div.informacao > ul {
+    animation-name: aparecerInfo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+#imgInicio {
+    animation-name: imgInicio;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+    to {
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+}
+
+@keyframes aparecerInfo {
+    from {
+        transform: translateY(20px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes imgInicio {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+div.Animais:not(div#inicio) {
+    display: none;
+}
+
+div.conteudo {
+    width: 60%;
+    padding: 20px 20px 20px 10px;
+}
+
+div.conteudo>h2 {
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-image: linear-gradient(to right, rgb(101, 184, 101), transparent);
+    width: 50%;
+    border-radius: 8px;
+}
+
+div.conteudo>div.informacao>ul, div.conteudo>ul {
+    list-style: none;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+p>span::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(101, 184, 101);
+
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+div.conteudo > p {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-family: "Cinzel Decorative";
+    font-weight: bold;
+    font-style: italic;
+}
+
+button {
+    background-color: rgb(76, 151, 76);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+
+    border: 2px rgba(0, 128, 0, 0.464) solid;
+    border-radius: 10px;
+
+    padding: 12px;
+    margin-right: 18px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.365);
+
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(52, 104, 52);
+    transform: scale(1.05)
+}
+
+footer {
+    background: linear-gradient(180deg, #1B4332 0%, #2D6A4F 100%);
+    margin: 0px;
+    padding-bottom: 60px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.42);
+}
+
+footer > p {
+    text-align: center;
+    font-family: "Cinzel Decorative";
+    font-weight: bold;
+    background-color: #255b44;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.165);
+}
+
+@media screen and (max-width: 760px) {
+    main {
+        width: 85%;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 35px;
+
+        margin: 0px auto;
+        border-radius: 0px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+
+    div#barra-busca {
+        width: 100%;
+    }
+
+    div#completar {
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    div.Animais {
+        width: 100%;
+    }
+
+    div.Animais > div.busca {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    div.Imagem {
+        width: 100%;
+        min-width: 200px;
+        max-width: 500px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    div.conteudo {
+        padding: 0px;
+        width: 100%;
+    }
+
+    div.conteudo > h2 {
+        width: 100%;
+    }
+
+    div.conteudo > p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    div.Animais {
+        align-items: stretch;
+    }
+
+    div.Animais > div.busca {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+    }
+
+    div.Imagem {
+        width: 50%;
+        min-width: 200px;
+        max-width: 500px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    div.conteudo {
+        padding: 0px;
+        width: 50%;
+        max-width: 700px;
+    }
+}
