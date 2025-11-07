@@ -177,6 +177,7 @@ div#barra-busca > span > a > img:hover {
 }
 
 div#completar {
+    display: none;
     position: absolute;
     margin-left: 8%;
     width: 15%;
@@ -210,7 +211,7 @@ div.Imagem {
     margin-right: 35px;
     border-radius: 8px;
 
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.411);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.411);
     transition: 0.3s;
 }
 
@@ -224,7 +225,7 @@ div.Imagem>img {
     max-width: 500px;
     height: 100%;
     margin-bottom: -5px;
-    border-radius: 8px;
+    border-radius: 8px; 
     border: 5px solid rgba(0, 133, 0, 0.5);
 }
 
@@ -283,13 +284,6 @@ div.informacao > ul {
     animation-timing-function: ease-in-out;
 }
 
-#imgInicio {
-    animation-name: imgInicio;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
 @keyframes aparecer {
     from {
         transform: translateX(100px);
@@ -320,18 +314,6 @@ div.informacao > ul {
     to {
         transform: translateY(0px);
         opacity: 100%;
-    }
-}
-
-@keyframes imgInicio {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-30px);
-    }
-    100% {
-        transform: translateY(0px);
     }
 }
 
@@ -385,7 +367,7 @@ button {
     border-radius: 10px;
 
     padding: 12px;
-    margin-right: 18px;
+    margin-top: 10px;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.365);
 
@@ -449,6 +431,11 @@ footer > p {
         justify-content: center;
         align-items: center;
         flex-flow: column nowrap;
+
+    }
+
+    div.busca:not(div.busca:first-child) {
+        margin-top: 60px;
     }
 
     div.Imagem {
@@ -466,6 +453,10 @@ footer > p {
 
     div.conteudo > h2 {
         width: 100%;
+    }
+
+    div.conteudo > button {
+        margin-top: 20px;
     }
 }
 

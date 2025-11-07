@@ -37,6 +37,7 @@ function Pesquisar(pesquisa) {
 function complete(p, pesquisa, divCom) {
     pesquisa.value = p.innerHTML;
     divCom.innerHTML = " ";
+    divCom.style.display = "none";
 }
 
 function completar(pesquisa) {
@@ -64,6 +65,7 @@ function completar(pesquisa) {
                 }
 
                 if (res) {
+                    divCom.style.display = "block";
                     let p = document.createElement("p");
                     p.innerHTML = Animais[i].Titulo;
                     p.setAttribute("class", "animal-busca");
@@ -90,6 +92,7 @@ function completar(pesquisa) {
 
     } else {
         divCom.innerHTML = " ";
+        divCom.style.display = "none";
     }
         
 }

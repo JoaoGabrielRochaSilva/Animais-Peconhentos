@@ -348,7 +348,7 @@ div.conteudo>h2 {
     padding: 10px;
     margin-bottom: 10px;
 
-    background-image: linear-gradient(to right, rgb(42, 156, 42), transparent);
+    background-image: linear-gradient(to right, rgb(101, 184, 101), transparent);
     width: 50%;
     border-radius: 8px;
 }
@@ -493,7 +493,7 @@ footer > p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-flow: row nowrap;
+        flex-flow: row-reverse nowrap;
     }
 
     div.Imagem {
