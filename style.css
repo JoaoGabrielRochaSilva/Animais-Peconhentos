@@ -135,10 +135,13 @@ div#barra-busca {
 div#barra-busca> input[type="text"] {
     width: 70%;
     height: 40px;
+    max-height: 40px;
     padding-left: 5px;
 
     border-radius: 20px 0px 0px 20px;
     border: 3px solid green;
+    border-right: none;
+    margin-right: -0.5%;
     background-color: rgba(0, 0, 0, 0.455);
     color: rgb(255, 255, 255);
     outline: none;
@@ -149,16 +152,19 @@ div#barra-busca> input[type="text"] {
 
 div#barra-busca> input[type="text"]:focus {
     border: 3px solid rgb(0, 108, 0);
+    border-right: none;
     background-color: rgba(0, 0, 0, 0.294);  
 }
 
-div#barra-busca > span {
+div#barra-busca > a {
     width: 30%;
+    height: 100%;
+    max-height: 40px;
     vertical-align: middle;
-    margin-left: -4px;
+    text-align: center;
 }
 
-div#barra-busca > span > a > img {
+div#barra-busca > a > img {
     height: 100%;
     max-height: 40px;
     background-color: green;
@@ -167,12 +173,7 @@ div#barra-busca > span > a > img {
     transition: 0.3s;
 }
 
-div#barra-busca > span > a > img {
-    background-color: green;
-    border-radius: 0px 20px 20px 0px;
-}
-
-div#barra-busca > span > a > img:hover {
+div#barra-busca > a > img:hover {
     cursor: pointer;
 }
 
