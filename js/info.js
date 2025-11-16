@@ -1,3 +1,6 @@
+//Os dados deste arquivo foram passados para o JSON
+
+/*
 const Animais = [
     {
         Nome: "Tarantula",
@@ -285,3 +288,4 @@ const Animais = [
         `
     }
 ]
+*/

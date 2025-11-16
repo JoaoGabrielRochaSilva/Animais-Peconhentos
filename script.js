@@ -2,6 +2,14 @@ let divs = document.querySelectorAll(".Animais");
 let pesquisa = document.getElementById("pesquisa");
 let lupa = document.getElementById("lupa");
 
+//Receber json
+let Animais = [];
+fetch("./js/dados.json")
+    .then(response => response.json())
+    .then(infoJson => {
+        Animais = infoJson.Animais;
+    });
+
 lupa.addEventListener("click", () => Pesquisar(pesquisa));
 pesquisa.addEventListener("input", () => completar(pesquisa));
 
