@@ -11,6 +11,10 @@ fetch("./js/dados.json")
     });
 
 lupa.addEventListener("click", () => Pesquisar(pesquisa));
+pesquisa.addEventListener("keydown", (event) => {
+    if (event.key === "Enter")
+        Pesquisar(pesquisa);
+});
 pesquisa.addEventListener("input", () => completar(pesquisa));
 
 function Pesquisar(pesquisa) {
